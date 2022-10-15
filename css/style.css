@@ -123,6 +123,74 @@ body {
   border: none;
   border-bottom: 0.04em solid var(--color-lightthree);
 }
+.wrapper .box__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 0.8em;
+}
+.wrapper .box__btn-result {
+  position: relative;
+  padding: 0.6em 0.8em;
+  text-transform: uppercase;
+  background: none;
+  border: 0.08em solid var(--color-lightone);
+  border-radius: 5px;
+  color: var(--color-lightone);
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper .box__btn-result::before {
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 130%;
+  border-radius: 50em;
+  -webkit-transform: translate(-120%, -30%);
+          transform: translate(-120%, -30%);
+  background-color: var(--color-blenda);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.wrapper .box__btn-result:hover::before {
+  -webkit-transform: translate(-25%, -30%);
+          transform: translate(-25%, -30%);
+}
+.wrapper .box__btn-clean {
+  position: relative;
+  padding: 0.6em 0.8em;
+  text-transform: uppercase;
+  background: none;
+  border: 0.08em solid var(--color-lightone);
+  border-radius: 5px;
+  color: var(--color-lightone);
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper .box__btn-clean::before {
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 130%;
+  border-radius: 50em;
+  -webkit-transform: translate(-120%, -30%);
+          transform: translate(-120%, -30%);
+  background-color: var(--color-blenda);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.wrapper .box__btn-clean:hover::before {
+  -webkit-transform: translate(-25%, -30%);
+          transform: translate(-25%, -30%);
+}
 
 @media (min-width: 768px) {
   body {
