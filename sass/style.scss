@@ -12,6 +12,7 @@
 	--color-lightone: #ddd;
 	--color-lighttwo: #c0c0c0;
 	--color-lightthree: #808080;
+	--color-error: #dc143c;
 	--color-blenda: rgba(192, 192, 192, 0.3);
 }
 
@@ -33,8 +34,38 @@ body {
 	width: 90%;
 	height: 100%;
 	h1 {
+		position: relative;
 		color: var(--color-lightone);
 		text-align: center;
+		margin-bottom: 1em;
+		padding-bottom: 0.3em;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 0.01em;
+			background-color: var(--color-lightone);
+			bottom: 0;
+			left: 0;
+		}
+	}
+	p {
+		color: var(--color-lighttwo);
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	ul {
+		color: var(--color-lightone);
+		padding-bottom: 1em;
+	}
+	li {
+		padding-bottom: 0.4em;
+	}
+	.error {
+		color: var(--color-error);
+		font-size: 1.2rem;
+		margin: 0.3em 0;
+		visibility: hidden;
 	}
 }
 
