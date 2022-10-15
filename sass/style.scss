@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--color-backone: #333;
+	--color-backtwo: #1a1a1a;
+	--color-lightone: #ddd;
+	--color-lighttwo: #c0c0c0;
+	--color-lightthree: #808080;
+	--color-blenda: rgba(192, 192, 192, 0.3);
+}
+
+body {
+	height: 100%;
+	background-color: var(--color-backtwo);
+	font-family: 'Roboto Condensed', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@import './medium';
