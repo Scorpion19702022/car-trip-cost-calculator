@@ -120,7 +120,7 @@ body {
 .wrapper .box__input-results {
   padding: 0.4em 1em;
   font-size: 2rem;
-  color: var(--color-lightthree);
+  color: var(--color-error);
   width: 60%;
   background: none;
   border: none;
