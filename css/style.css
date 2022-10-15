@@ -100,6 +100,29 @@ body {
   -webkit-box-shadow: 3px 3px 5px var(--color-blenda);
           box-shadow: 3px 3px 5px var(--color-blenda);
 }
+.wrapper .box__heading {
+  color: var(--color-lighttwo);
+  text-align: center;
+}
+.wrapper .box__label {
+  margin: 1em 0 0.3em;
+  color: var(--color-lighttwo);
+}
+.wrapper .box__input {
+  padding: 0.2em 1em;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 5px;
+}
+.wrapper .box__input-results {
+  padding: 0.4em 1em;
+  font-size: 2rem;
+  color: var(--color-lightthree);
+  width: 60%;
+  background: none;
+  border: none;
+  border-bottom: 0.04em solid var(--color-lightthree);
+}
 
 @media (min-width: 768px) {
   body {
