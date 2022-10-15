@@ -24,4 +24,18 @@ body {
 	align-items: center;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	width: 90%;
+	height: 100%;
+	h1 {
+		color: var(--color-lightone);
+		text-align: center;
+	}
+}
+
 @import './medium';
